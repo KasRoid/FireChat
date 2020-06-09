@@ -68,7 +68,6 @@ class ConversationsController: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
         
         navigationController?.navigationBar.overrideUserInterfaceStyle = .dark
-        
     }
 }
 

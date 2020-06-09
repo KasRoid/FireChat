@@ -24,33 +24,24 @@ class RegistrationController: UIViewController {
     }()
     
     private lazy var emailContainerView: UIView = {
-        let containerView = InputContainerView(image: #imageLiteral(resourceName: "ic_mail_outline_white_2x"),
-                                               textField: emailTextField)
-        return containerView
+        return InputContainerView(image: #imageLiteral(resourceName: "ic_mail_outline_white_2x"), textField: emailTextField)
     }()
     
     private lazy var fullnameContainerView: UIView = {
-        let containerView = InputContainerView(image: #imageLiteral(resourceName: "ic_person_outline_white_2x"),
-                                               textField: fullnameTextField)
-        return containerView
+        return InputContainerView(image: #imageLiteral(resourceName: "ic_person_outline_white_2x"), textField: fullnameTextField)
     }()
     
     private lazy var usernameContainerView: UIView = {
-        let containerView = InputContainerView(image: #imageLiteral(resourceName: "ic_person_outline_white_2x"),
-                                               textField: usernameTextField)
-        return containerView
+        return InputContainerView(image: #imageLiteral(resourceName: "ic_person_outline_white_2x"), textField: usernameTextField)
     }()
     
     private lazy var passwordContainerView: InputContainerView = {
-        let containerView = InputContainerView(image: #imageLiteral(resourceName: "ic_lock_outline_white_2x"),
-                                               textField: passwordTextField)
-        return containerView
+        return InputContainerView(image: #imageLiteral(resourceName: "ic_lock_outline_white_2x"), textField: passwordTextField)
     }()
     
     private let emailTextField = CustomTextField(placeholder: "Email")
     private let fullnameTextField = CustomTextField(placeholder: "Full Name")
     private let usernameTextField = CustomTextField(placeholder: "Username")
-    
     private let passwordTextField: CustomTextField = {
         let tf = CustomTextField(placeholder: "password")
         tf.isSecureTextEntry = true

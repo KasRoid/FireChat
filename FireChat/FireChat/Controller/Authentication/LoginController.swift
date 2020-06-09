@@ -12,6 +12,16 @@ protocol AuthenticationControllerProtocol {
     func checkFormStatus()
 }
 
+extension UIViewController {
+    func configureGradientLayer() {
+        let gradient = CAGradientLayer()
+        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
+        gradient.locations = [0, 1]
+        view.layer.addSublayer(gradient)
+        gradient.frame = view.frame
+    }
+}
+
 class LoginController: UIViewController {
     
     // MARK: - Properties
@@ -96,7 +106,6 @@ class LoginController: UIViewController {
         } else {
             viewModel.password = sender.text
         }
-        
         checkFormStatus()
     }
     
@@ -132,16 +141,6 @@ class LoginController: UIViewController {
         
         emailTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
-    }
-}
-
-extension UIViewController {
-    func configureGradientLayer() {
-        let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
-        gradient.locations = [0, 1]
-        view.layer.addSublayer(gradient)
-        gradient.frame = view.frame
     }
 }
 

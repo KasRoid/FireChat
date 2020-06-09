@@ -1,5 +1,5 @@
 //
-//  LoginViewModel.swift
+//  RegistrationViewModel.swift
 //  FireChat
 //
 //  Created by 천지운 on 2020/06/09.
@@ -8,16 +8,16 @@
 
 import Foundation
 
-protocol AuthenticationProtocol {
-    var formIsVaild: Bool { get }
-}
-
-struct LoginViewModel {
+struct RegistrationViewModel: AuthenticationProtocol {
     var email: String?
     var password: String?
+    var fullname: String?
+    var username: String?
     
     var formIsVaild: Bool {
         return email?.isEmpty == false &&
-            password?.isEmpty == false
+            password?.isEmpty == false &&
+            fullname?.isEmpty == false &&
+            username?.isEmpty == false
     }
 }

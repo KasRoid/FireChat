@@ -66,7 +66,7 @@ class RegistrationController: UIViewController {
     
     private let alreadyHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
-        let attributedTitle = NSMutableAttributedString(string: "Don't have an account? ", attributes: [.font: UIFont.systemFont(ofSize: 16),
+        let attributedTitle = NSMutableAttributedString(string: "Have an account? ", attributes: [.font: UIFont.systemFont(ofSize: 16),
                                                                                                         .foregroundColor: UIColor.white])
         
         attributedTitle.append(NSMutableAttributedString(string: "Log In", attributes: [.font: UIFont.boldSystemFont(ofSize: 16),
@@ -121,7 +121,7 @@ class RegistrationController: UIViewController {
                                 "fullname": fullname,
                                 "profileImageUrl": profileImageUrl,
                                 "uid": uid,
-                    "username": username] as [String : Any]
+                                "username": username] as [String : Any]
                     
                     Firestore.firestore().collection("users").document(uid).setData(data) { error in
                         if let error = error {
@@ -194,7 +194,6 @@ class RegistrationController: UIViewController {
         passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         fullnameTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         usernameTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
-
     }
 }
 

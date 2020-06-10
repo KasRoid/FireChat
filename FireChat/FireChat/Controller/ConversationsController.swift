@@ -19,8 +19,8 @@ class ConversationsController: UIViewController {
     private let tableView = UITableView()
     
     
-    
     // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -61,6 +61,7 @@ class ConversationsController: UIViewController {
             let controller = LoginController()
             let nav = UINavigationController(rootViewController: controller)
             nav.modalPresentationStyle = .fullScreen
+            nav.modalTransitionStyle = .crossDissolve
             self.present(nav, animated: true)
         }
     }

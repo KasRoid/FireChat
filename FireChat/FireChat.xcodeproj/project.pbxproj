@@ -23,6 +23,7 @@
 		AF178FBF248F6F97005E14B6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FBE248F6F97005E14B6 /* LoginViewModel.swift */; };
 		AF178FC1248F79E0005E14B6 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FC0248F79E0005E14B6 /* RegistrationViewModel.swift */; };
 		AF178FC5248F9288005E14B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF178FC4248F9288005E14B6 /* GoogleService-Info.plist */; };
+		AF80FD3E2490B886000A1470 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD3D2490B886000A1470 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AF178FBE248F6F97005E14B6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = FireChat/Controller/Authentication/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
 		AF178FC0248F79E0005E14B6 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationViewModel.swift; path = FireChat/Controller/Authentication/RegistrationViewModel.swift; sourceTree = SOURCE_ROOT; };
 		AF178FC4248F9288005E14B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AF80FD3D2490B886000A1470 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		423CE016248F2A2F00428791 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				AF80FD3D2490B886000A1470 /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				AF178FB7248F4547005E14B6 /* RegistrationController.swift in Sources */,
 				AF178FC1248F79E0005E14B6 /* RegistrationViewModel.swift in Sources */,
 				AF178FBB248F5E69005E14B6 /* InputContainerView.swift in Sources */,
+				AF80FD3E2490B886000A1470 /* AuthService.swift in Sources */,
 				423CDFFF248F26D100428791 /* ViewController.swift in Sources */,
 				423CDFFB248F26D100428791 /* AppDelegate.swift in Sources */,
 				423CE01B248F2AAE00428791 /* ConversationsController.swift in Sources */,

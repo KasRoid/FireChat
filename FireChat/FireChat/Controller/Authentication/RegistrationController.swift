@@ -113,6 +113,7 @@ class RegistrationController: UIViewController {
             
             self.showLoader(false)
             self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
         }
     }
     

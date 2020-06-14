@@ -10,10 +10,23 @@ import Firebase
 
 struct Service {
     
-    static func fetchUsers() {
+    /*
+     @escaping
+     해당 함수의 인자로 클로저가 전달되지만, 함수가 반환된 후 실행 되는 것을 의미한다.
+     함수에서 선언된 로컬 변수가 로컬 변수의 영역을 뛰어넘어 함수 밖에서도 유효하기 때문이다.
+     https://hcn1519.github.io/articles/2017-09/swift_escaping_closure
+     아마... 함수 외부에 저장하기를 통해 값을 전달한것으로 보임
+     */
+    static func fetchUsers(completion: @escaping([User]) -> Void) {
+        var users = [User]()
         Firestore.firestore().collection("users").getDocuments { (snapshot, error) in
             snapshot?.documents.forEach({ document in
-                print(document.data())
+                
+                let dictionary = document.data()
+                let user = User(dictionary: dictionary)
+                
+                users.append(user)
+                completion(users)
             })
         }
     }

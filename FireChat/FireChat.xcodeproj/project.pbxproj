@@ -28,6 +28,7 @@
 		AF80FD422490F196000A1470 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD412490F196000A1470 /* UserCell.swift */; };
 		AF80FD442490F710000A1470 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD432490F710000A1470 /* User.swift */; };
 		AF80FD462490F785000A1470 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD452490F785000A1470 /* Service.swift */; };
+		AF81C0A624967AC200B798AD /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81C0A524967AC200B798AD /* ChatController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		AF80FD412490F196000A1470 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = FireChat/Controller/UserCell.swift; sourceTree = SOURCE_ROOT; };
 		AF80FD432490F710000A1470 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = FireChat/Controller/User.swift; sourceTree = SOURCE_ROOT; };
 		AF80FD452490F785000A1470 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Service.swift; path = FireChat/Controller/Service.swift; sourceTree = SOURCE_ROOT; };
+		AF81C0A524967AC200B798AD /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				AF178FB3248F43E7005E14B6 /* Authentication */,
 				423CE01A248F2AAE00428791 /* ConversationsController.swift */,
 				AF80FD3F2490DCFA000A1470 /* NewMessageController.swift */,
+				AF81C0A524967AC200B798AD /* ChatController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				AF178FB5248F4425005E14B6 /* LoginController.swift in Sources */,
 				AF178FB9248F47DA005E14B6 /* Extensions.swift in Sources */,
 				AF178FBF248F6F97005E14B6 /* LoginViewModel.swift in Sources */,
+				AF81C0A624967AC200B798AD /* ChatController.swift in Sources */,
 				AF178FBD248F60C4005E14B6 /* CustomTextField.swift in Sources */,
 				AF80FD402490DCFA000A1470 /* NewMessageController.swift in Sources */,
 			);

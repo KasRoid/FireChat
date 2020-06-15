@@ -31,6 +31,30 @@ struct Service {
         }
     }
     
+    static func fetchMessage(forUser user: User, completion: @escaping([Message]) -> Void) {
+        var messages = [Message]()
+        guard let currentUid = Auth.auth().currentUser?.uid else { return }
+        
+        let query = COLLECTION_MESSAGES.document(currentUid).collection(user.uid).order(by: "timestamp")
+        
+        query.addSnapshotListener { (snapshot, error) in // snapshot listener 등록
+            snapshot?.documentChanges.forEach({ change in // 변화가 있으면 데이터 가져옴
+                if change.type == .added {
+                    let dictionary = change.document.data()
+                    messages.append(Message(dictionary: dictionary))
+                    completion(messages)
+                }
+                
+                /*
+                 DocumentChange Type
+                 .added: 쿼리와 일치하는 문서 세트에 새 문서가 추가되었음을 나타냅니다.
+                 .modified: 쿼리 내의 문서가 수정되었음을 나타냅니다.
+                 .removed: 쿼리 내에서 문서가 제거되었음을 나타냅니다 (삭제되었거나 더 이상 쿼리와 일치하지 않음).
+                 */
+            })
+        }
+    }
+    
     static func uploadMessage(_ message: String, to user: User, completion: ((Error?) -> Void)?) {
         guard let currentUid = Auth.auth().currentUser?.uid else { return }
         

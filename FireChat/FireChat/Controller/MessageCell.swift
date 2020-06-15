@@ -23,7 +23,6 @@ class MessageCell: UICollectionViewCell {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
-        iv.backgroundColor = .lightGray
         return iv
     }()
     
@@ -89,5 +88,6 @@ class MessageCell: UICollectionViewCell {
         bubbleRightAnchor.isActive = viewModel.rightAnchorActive
         
         profileImageView.isHidden = viewModel.shouldHideProfileImage
+        profileImageView.sd_setImage(with: viewModel.profileImageUrl) // URL을 가지고 이미지를 구성할 때
     }
 }

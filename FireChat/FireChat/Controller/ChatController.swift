@@ -56,6 +56,7 @@ class ChatController: UICollectionViewController {
         Service.fetchMessage(forUser: user) { messages in
             self.messages = messages
             self.collectionView.reloadData()
+            self.collectionView.scrollToItem(at: [0, self.messages.count - 1], at: .bottom, animated: true)
         }
     }
     
@@ -67,6 +68,7 @@ class ChatController: UICollectionViewController {
         
         collectionView.register(MessageCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.alwaysBounceVertical = true // 세로 스크롤이 내용의 끝에 도달 할 때, 항상 수신 거부(?)가 발생하는지 여부를 결정하는 값
+        collectionView.keyboardDismissMode = .interactive // 대화창을 내릴 때 키보드도 같이 내려갈 수 있도록 세팅
     }
 }
 
@@ -93,7 +95,18 @@ extension ChatController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 50)
+        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 50)
+        let estimatedSizeCell = MessageCell(frame: frame)
+        estimatedSizeCell.message = messages[indexPath.row]
+        estimatedSizeCell.layoutIfNeeded()
+        
+        let targetSize = CGSize(width: view.frame.width, height: 1000)
+        let estimatedSize = estimatedSizeCell.systemLayoutSizeFitting(targetSize)
+        /*
+         .systemLayoutSizeFitting => 이 메서드는 뷰의 현재 제약 조건을 최적으로 만족하고 가능한 한 targetSize 매개 변수의 값에 가까운 뷰의 크기 값을 반환합니다. 이 방법은 실제로보기의 크기를 변경하지 않습니다.
+         */
+        
+        return .init(width: view.frame.width, height: estimatedSize.height)
     }
 }
 

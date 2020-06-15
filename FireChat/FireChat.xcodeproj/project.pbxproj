@@ -20,11 +20,13 @@
 		AF178FB9248F47DA005E14B6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FB8248F47DA005E14B6 /* Extensions.swift */; };
 		AF178FBB248F5E69005E14B6 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FBA248F5E69005E14B6 /* InputContainerView.swift */; };
 		AF178FBD248F60C4005E14B6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FBC248F60C4005E14B6 /* CustomTextField.swift */; };
-		AF178FBF248F6F97005E14B6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FBE248F6F97005E14B6 /* LoginViewModel.swift */; };
-		AF178FC1248F79E0005E14B6 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FC0248F79E0005E14B6 /* RegistrationViewModel.swift */; };
 		AF178FC5248F9288005E14B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF178FC4248F9288005E14B6 /* GoogleService-Info.plist */; };
 		AF561187249704AC009DCF75 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF561186249704AC009DCF75 /* CustomInputAccessoryView.swift */; };
 		AF56118924970E4B009DCF75 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56118824970E4B009DCF75 /* MessageCell.swift */; };
+		AF5BECC324976F330060BBA9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5BECC224976F330060BBA9 /* Message.swift */; };
+		AF5BECC5249771DD0060BBA9 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5BECC4249771DD0060BBA9 /* MessageViewModel.swift */; };
+		AF5BECC82497734A0060BBA9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5BECC72497734A0060BBA9 /* LoginViewModel.swift */; };
+		AF5BECCA2497736C0060BBA9 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5BECC92497736C0060BBA9 /* RegistrationViewModel.swift */; };
 		AF80FD3E2490B886000A1470 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD3D2490B886000A1470 /* AuthService.swift */; };
 		AF80FD402490DCFA000A1470 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD3F2490DCFA000A1470 /* NewMessageController.swift */; };
 		AF80FD422490F196000A1470 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD412490F196000A1470 /* UserCell.swift */; };
@@ -51,11 +53,13 @@
 		AF178FB8248F47DA005E14B6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AF178FBA248F5E69005E14B6 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputContainerView.swift; path = FireChat/Controller/Authentication/InputContainerView.swift; sourceTree = SOURCE_ROOT; };
 		AF178FBC248F60C4005E14B6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = FireChat/Controller/Authentication/CustomTextField.swift; sourceTree = SOURCE_ROOT; };
-		AF178FBE248F6F97005E14B6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = FireChat/Controller/Authentication/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
-		AF178FC0248F79E0005E14B6 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationViewModel.swift; path = FireChat/Controller/Authentication/RegistrationViewModel.swift; sourceTree = SOURCE_ROOT; };
 		AF178FC4248F9288005E14B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AF561186249704AC009DCF75 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomInputAccessoryView.swift; path = FireChat/Controller/CustomInputAccessoryView.swift; sourceTree = SOURCE_ROOT; };
 		AF56118824970E4B009DCF75 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageCell.swift; path = FireChat/Controller/MessageCell.swift; sourceTree = SOURCE_ROOT; };
+		AF5BECC224976F330060BBA9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = FireChat/Controller/Message.swift; sourceTree = SOURCE_ROOT; };
+		AF5BECC4249771DD0060BBA9 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageViewModel.swift; path = FireChat/Controller/MessageViewModel.swift; sourceTree = SOURCE_ROOT; };
+		AF5BECC72497734A0060BBA9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AF5BECC92497736C0060BBA9 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AF80FD3D2490B886000A1470 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = SOURCE_ROOT; };
 		AF80FD3F2490DCFA000A1470 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		AF80FD412490F196000A1470 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = FireChat/Controller/UserCell.swift; sourceTree = SOURCE_ROOT; };
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				AF80FD432490F710000A1470 /* User.swift */,
+				AF5BECC224976F330060BBA9 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,8 +143,8 @@
 		423CE011248F29A100428791 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AF178FBE248F6F97005E14B6 /* LoginViewModel.swift */,
-				AF178FC0248F79E0005E14B6 /* RegistrationViewModel.swift */,
+				AF5BECC62497721B0060BBA9 /* Authentication */,
+				AF5BECC4249771DD0060BBA9 /* MessageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,6 +182,15 @@
 			children = (
 				AF178FB4248F4425005E14B6 /* LoginController.swift */,
 				AF178FB6248F4547005E14B6 /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AF5BECC62497721B0060BBA9 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AF5BECC72497734A0060BBA9 /* LoginViewModel.swift */,
+				AF5BECC92497736C0060BBA9 /* RegistrationViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -315,22 +329,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF178FB7248F4547005E14B6 /* RegistrationController.swift in Sources */,
-				AF178FC1248F79E0005E14B6 /* RegistrationViewModel.swift in Sources */,
+				AF5BECC82497734A0060BBA9 /* LoginViewModel.swift in Sources */,
 				AF178FBB248F5E69005E14B6 /* InputContainerView.swift in Sources */,
 				AF80FD3E2490B886000A1470 /* AuthService.swift in Sources */,
+				AF5BECC5249771DD0060BBA9 /* MessageViewModel.swift in Sources */,
 				423CDFFF248F26D100428791 /* ViewController.swift in Sources */,
 				423CDFFB248F26D100428791 /* AppDelegate.swift in Sources */,
 				AF80FD422490F196000A1470 /* UserCell.swift in Sources */,
 				423CE01B248F2AAE00428791 /* ConversationsController.swift in Sources */,
 				AF80FD442490F710000A1470 /* User.swift in Sources */,
+				AF5BECCA2497736C0060BBA9 /* RegistrationViewModel.swift in Sources */,
 				AF80FD462490F785000A1470 /* Service.swift in Sources */,
 				AF56118924970E4B009DCF75 /* MessageCell.swift in Sources */,
 				423CDFFD248F26D100428791 /* SceneDelegate.swift in Sources */,
 				AF178FB5248F4425005E14B6 /* LoginController.swift in Sources */,
 				AF178FB9248F47DA005E14B6 /* Extensions.swift in Sources */,
-				AF178FBF248F6F97005E14B6 /* LoginViewModel.swift in Sources */,
 				AF81C0A624967AC200B798AD /* ChatController.swift in Sources */,
 				AF178FBD248F60C4005E14B6 /* CustomTextField.swift in Sources */,
+				AF5BECC324976F330060BBA9 /* Message.swift in Sources */,
 				AF80FD402490DCFA000A1470 /* NewMessageController.swift in Sources */,
 				AF561187249704AC009DCF75 /* CustomInputAccessoryView.swift in Sources */,
 			);

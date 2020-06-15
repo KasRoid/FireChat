@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol CustomInputAccessoryViewDelegate: class {
+    func inputView(_ inputView: CustomInputAccessoryView, wantsToSend message: String)
+}
+
 class CustomInputAccessoryView: UIView {
     
     // MARK: - Properties
     
-    private let messageInputTextView: UITextView = {
+    weak var delegate: CustomInputAccessoryViewDelegate?
+    
+    let messageInputTextView: UITextView = {
         let tv = UITextView()
         tv.font = UIFont.systemFont(ofSize: 16)
         tv.isScrollEnabled = false
@@ -61,9 +67,11 @@ class CustomInputAccessoryView: UIView {
         sendButton.setDimensions(height: 50, width: 50)
         
         addSubview(messageInputTextView)
-        messageInputTextView.anchor(top: topAnchor, left: leftAnchor, bottom: safeAreaLayoutGuide.bottomAnchor,
-                                    right: sendButton.leftAnchor, paddingTop: 12, paddingLeft: 4, paddingBottom: 4,
-                                    paddingRight: 8)
+        messageInputTextView.anchor(top: topAnchor,
+                                    left: leftAnchor,
+                                    bottom: safeAreaLayoutGuide.bottomAnchor,
+                                    right: sendButton.leftAnchor,
+                                    paddingTop: 12, paddingLeft: 4, paddingBottom: 4, paddingRight: 8)
         
         addSubview(placeholderLabel)
         placeholderLabel.anchor(left: messageInputTextView.leftAnchor, paddingLeft: 4)
@@ -89,7 +97,8 @@ class CustomInputAccessoryView: UIView {
     }
     
     @objc func handleSendMessage() {
-        print("DEBUG: Send Message")
+        guard let message = messageInputTextView.text else { return }
+        delegate?.inputView(self, wantsToSend: message)
     }
     
 }

@@ -23,6 +23,8 @@
 		AF178FBF248F6F97005E14B6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FBE248F6F97005E14B6 /* LoginViewModel.swift */; };
 		AF178FC1248F79E0005E14B6 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FC0248F79E0005E14B6 /* RegistrationViewModel.swift */; };
 		AF178FC5248F9288005E14B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF178FC4248F9288005E14B6 /* GoogleService-Info.plist */; };
+		AF561187249704AC009DCF75 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF561186249704AC009DCF75 /* CustomInputAccessoryView.swift */; };
+		AF56118924970E4B009DCF75 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56118824970E4B009DCF75 /* MessageCell.swift */; };
 		AF80FD3E2490B886000A1470 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD3D2490B886000A1470 /* AuthService.swift */; };
 		AF80FD402490DCFA000A1470 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD3F2490DCFA000A1470 /* NewMessageController.swift */; };
 		AF80FD422490F196000A1470 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80FD412490F196000A1470 /* UserCell.swift */; };
@@ -52,6 +54,8 @@
 		AF178FBE248F6F97005E14B6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = FireChat/Controller/Authentication/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
 		AF178FC0248F79E0005E14B6 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationViewModel.swift; path = FireChat/Controller/Authentication/RegistrationViewModel.swift; sourceTree = SOURCE_ROOT; };
 		AF178FC4248F9288005E14B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AF561186249704AC009DCF75 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomInputAccessoryView.swift; path = FireChat/Controller/CustomInputAccessoryView.swift; sourceTree = SOURCE_ROOT; };
+		AF56118824970E4B009DCF75 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageCell.swift; path = FireChat/Controller/MessageCell.swift; sourceTree = SOURCE_ROOT; };
 		AF80FD3D2490B886000A1470 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = SOURCE_ROOT; };
 		AF80FD3F2490DCFA000A1470 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		AF80FD412490F196000A1470 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = FireChat/Controller/UserCell.swift; sourceTree = SOURCE_ROOT; };
@@ -125,6 +129,8 @@
 				AF178FBA248F5E69005E14B6 /* InputContainerView.swift */,
 				AF178FBC248F60C4005E14B6 /* CustomTextField.swift */,
 				AF80FD412490F196000A1470 /* UserCell.swift */,
+				AF561186249704AC009DCF75 /* CustomInputAccessoryView.swift */,
+				AF56118824970E4B009DCF75 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				423CE01B248F2AAE00428791 /* ConversationsController.swift in Sources */,
 				AF80FD442490F710000A1470 /* User.swift in Sources */,
 				AF80FD462490F785000A1470 /* Service.swift in Sources */,
+				AF56118924970E4B009DCF75 /* MessageCell.swift in Sources */,
 				423CDFFD248F26D100428791 /* SceneDelegate.swift in Sources */,
 				AF178FB5248F4425005E14B6 /* LoginController.swift in Sources */,
 				AF178FB9248F47DA005E14B6 /* Extensions.swift in Sources */,
@@ -325,6 +332,7 @@
 				AF81C0A624967AC200B798AD /* ChatController.swift in Sources */,
 				AF178FBD248F60C4005E14B6 /* CustomTextField.swift in Sources */,
 				AF80FD402490DCFA000A1470 /* NewMessageController.swift in Sources */,
+				AF561187249704AC009DCF75 /* CustomInputAccessoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

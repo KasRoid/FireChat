@@ -15,6 +15,8 @@
 		423CE004248F26D600428791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423CE003248F26D600428791 /* Assets.xcassets */; };
 		423CE007248F26D600428791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423CE005248F26D600428791 /* LaunchScreen.storyboard */; };
 		423CE01B248F2AAE00428791 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423CE01A248F2AAE00428791 /* ConversationsController.swift */; };
+		AF1210A62498658A009F0D96 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1210A52498658A009F0D96 /* ConversationCell.swift */; };
+		AF1210A8249878C9009F0D96 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1210A7249878C9009F0D96 /* ConversationViewModel.swift */; };
 		AF178FB5248F4425005E14B6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FB4248F4425005E14B6 /* LoginController.swift */; };
 		AF178FB7248F4547005E14B6 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FB6248F4547005E14B6 /* RegistrationController.swift */; };
 		AF178FB9248F47DA005E14B6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF178FB8248F47DA005E14B6 /* Extensions.swift */; };
@@ -49,6 +51,8 @@
 		569E472F3E1DD20483F64D7E /* Pods-FireChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.debug.xcconfig"; path = "Target Support Files/Pods-FireChat/Pods-FireChat.debug.xcconfig"; sourceTree = "<group>"; };
 		7F174AF7DCD43236007B6D10 /* Pods_FireChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A313325B6109C2627A53A372 /* Pods-FireChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.release.xcconfig"; path = "Target Support Files/Pods-FireChat/Pods-FireChat.release.xcconfig"; sourceTree = "<group>"; };
+		AF1210A52498658A009F0D96 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationCell.swift; path = FireChat/Utils/ConversationCell.swift; sourceTree = SOURCE_ROOT; };
+		AF1210A7249878C9009F0D96 /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
 		AF178FB4248F4425005E14B6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		AF178FB6248F4547005E14B6 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		AF178FB8248F47DA005E14B6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				AF80FD412490F196000A1470 /* UserCell.swift */,
 				AF561186249704AC009DCF75 /* CustomInputAccessoryView.swift */,
 				AF56118824970E4B009DCF75 /* MessageCell.swift */,
+				AF1210A52498658A009F0D96 /* ConversationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			children = (
 				AF5BECC62497721B0060BBA9 /* Authentication */,
 				AF5BECC4249771DD0060BBA9 /* MessageViewModel.swift */,
+				AF1210A7249878C9009F0D96 /* ConversationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -344,12 +350,14 @@
 				AF80FD442490F710000A1470 /* User.swift in Sources */,
 				AF5BECCA2497736C0060BBA9 /* RegistrationViewModel.swift in Sources */,
 				AF80FD462490F785000A1470 /* Service.swift in Sources */,
+				AF1210A8249878C9009F0D96 /* ConversationViewModel.swift in Sources */,
 				AF56118924970E4B009DCF75 /* MessageCell.swift in Sources */,
 				423CDFFD248F26D100428791 /* SceneDelegate.swift in Sources */,
 				AF178FB5248F4425005E14B6 /* LoginController.swift in Sources */,
 				AF178FB9248F47DA005E14B6 /* Extensions.swift in Sources */,
 				AF81C0A624967AC200B798AD /* ChatController.swift in Sources */,
 				AF178FBD248F60C4005E14B6 /* CustomTextField.swift in Sources */,
+				AF1210A62498658A009F0D96 /* ConversationCell.swift in Sources */,
 				AF5BECC324976F330060BBA9 /* Message.swift in Sources */,
 				AF80FD402490DCFA000A1470 /* NewMessageController.swift in Sources */,
 				AF561187249704AC009DCF75 /* CustomInputAccessoryView.swift in Sources */,

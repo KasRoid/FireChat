@@ -27,3 +27,9 @@ struct Message {
         self.isFromCurrentUser = fromId == Auth.auth().currentUser?.uid
     }
 }
+
+
+struct Conversation {
+    let user: User
+    let message: Message
+}

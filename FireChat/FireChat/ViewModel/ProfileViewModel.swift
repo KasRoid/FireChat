@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ProfileViewModel: Int, CaseIterable { // ?
+enum ProfileViewModel: Int, CaseIterable { // CaseIterable ?
     case accountInfo
     case settings
     

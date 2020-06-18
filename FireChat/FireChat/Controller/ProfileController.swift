@@ -11,6 +11,10 @@ import Firebase
 
 private let reuseIdentifier = "ProfileCell"
 
+protocol ProfileControllerDelegate: class {
+    func handleLogout()
+}
+
 class ProfileController: UITableViewController {
     
     // MARK: - Properties
@@ -18,6 +22,8 @@ class ProfileController: UITableViewController {
     private var user: User? {
         didSet { headerView.user = user }
     }
+    
+    weak var delegate: ProfileControllerDelegate?
     
     private lazy var headerView = ProfileHeader(frame: .init(x: 0, y: 0,
                                                              width: view.frame.width, height: 380))
@@ -44,7 +50,6 @@ class ProfileController: UITableViewController {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         Service.fetchUser(withUid: uid) { user in
             self.user = user
-            print("DEBUG: ProfileController User: \(user)")
         }
     }
     
@@ -62,6 +67,7 @@ class ProfileController: UITableViewController {
         tableView.backgroundColor = .systemGroupedBackground
         
         footerView.frame = .init(x: 0, y: 0, width: view.frame.width, height: 100)
+        footerView.delegate = self
         tableView.tableFooterView = footerView
     }
     
@@ -85,7 +91,22 @@ extension ProfileController {
     }
 }
 
+// MARK: - UITableViewDelegate
+
 extension ProfileController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let viewModel = ProfileViewModel(rawValue: indexPath.row) else { return }
+        
+        
+        switch viewModel {
+        case .accountInfo:
+            print("DEBUG: accountInfo")
+        case .settings:
+            print("DEBUG: settings")
+            
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // TableView Section Header에 UIView()를 넣어주어 약간의 공백을 만들 수 있음
         return UIView()
@@ -97,5 +118,22 @@ extension ProfileController {
 extension ProfileController: ProfileHeaderDelegate {
     func dismissController() {
         dismiss(animated: true, completion: nil)
+    }
+}
+
+// MARK: -
+extension ProfileController: ProfileFooterDelegate {
+    func handleLogout() {
+        let alert = UIAlertController(title: nil, message: "Are you sure you want to logut?", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Log out", style: .destructive, handler: { _ in
+            self.dismiss(animated: true) {
+                self.delegate?.handleLogout()
+            }
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        present(alert, animated: true)
     }
 }

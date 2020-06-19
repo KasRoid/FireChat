@@ -62,7 +62,7 @@ class ProfileController: UITableViewController {
         headerView.delegate = self
         tableView.register(ProfileCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.tableFooterView = UIView()
-        tableView.contentInsetAdjustmentBehavior = .never // ?
+        tableView.contentInsetAdjustmentBehavior = .never
         tableView.rowHeight = 64
         tableView.backgroundColor = .systemGroupedBackground
         
@@ -121,7 +121,7 @@ extension ProfileController: ProfileHeaderDelegate {
     }
 }
 
-// MARK: -
+// MARK: - ProfileFooterDelegate
 extension ProfileController: ProfileFooterDelegate {
     func handleLogout() {
         let alert = UIAlertController(title: nil, message: "Are you sure you want to logut?", preferredStyle: .actionSheet)

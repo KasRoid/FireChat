@@ -167,7 +167,7 @@ extension ConversationsController: NewMessageControllerDelegate {
     }
 }
 
-// MARK: -
+// MARK: - ProfileControllerDelegate
 extension ConversationsController: ProfileControllerDelegate {
     func handleLogout() {
         logout()

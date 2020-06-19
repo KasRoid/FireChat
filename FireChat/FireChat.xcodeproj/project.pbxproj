@@ -148,13 +148,13 @@
 			isa = PBXGroup;
 			children = (
 				AF178FBA248F5E69005E14B6 /* InputContainerView.swift */,
-				AF178FBC248F60C4005E14B6 /* CustomTextField.swift */,
-				AF80FD412490F196000A1470 /* UserCell.swift */,
 				AF561186249704AC009DCF75 /* CustomInputAccessoryView.swift */,
-				AF56118824970E4B009DCF75 /* MessageCell.swift */,
-				AF1210A52498658A009F0D96 /* ConversationCell.swift */,
+				AF178FBC248F60C4005E14B6 /* CustomTextField.swift */,
 				AF7C322C249A365C00230921 /* ProfileHeader.swift */,
+				AF1210A52498658A009F0D96 /* ConversationCell.swift */,
+				AF56118824970E4B009DCF75 /* MessageCell.swift */,
 				AF7C3230249A4E1600230921 /* ProfileCell.swift */,
+				AF80FD412490F196000A1470 /* UserCell.swift */,
 				AF580253249AF6AC00D79DC2 /* ProfileFooter.swift */,
 			);
 			path = View;

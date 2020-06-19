@@ -31,6 +31,7 @@
 		AF5BECC82497734A0060BBA9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5BECC72497734A0060BBA9 /* LoginViewModel.swift */; };
 		AF5BECCA2497736C0060BBA9 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5BECC92497736C0060BBA9 /* RegistrationViewModel.swift */; };
 		AF5BECCC24979A8D0060BBA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5BECCB24979A8D0060BBA9 /* Constants.swift */; };
+		AF5C363F249CF38000F7A237 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5C363E249CF38000F7A237 /* Default-568h@2x.png */; };
 		AF7C322B249A358A00230921 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7C322A249A358A00230921 /* ProfileController.swift */; };
 		AF7C322D249A365C00230921 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7C322C249A365C00230921 /* ProfileHeader.swift */; };
 		AF7C322F249A4BFD00230921 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7C322E249A4BFD00230921 /* ProfileViewModel.swift */; };
@@ -72,6 +73,7 @@
 		AF5BECC72497734A0060BBA9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AF5BECC92497736C0060BBA9 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AF5BECCB24979A8D0060BBA9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF5C363E249CF38000F7A237 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AF7C322A249A358A00230921 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		AF7C322C249A365C00230921 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileHeader.swift; path = FireChat/Controller/ProfileHeader.swift; sourceTree = SOURCE_ROOT; };
 		AF7C322E249A4BFD00230921 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		423CDFEE248F26D100428791 = {
 			isa = PBXGroup;
 			children = (
+				AF5C363E249CF38000F7A237 /* Default-568h@2x.png */,
 				423CDFF9248F26D100428791 /* FireChat */,
 				423CDFF8248F26D100428791 /* Products */,
 				EEBDDE4583E92E0E244FBE27 /* Pods */,
@@ -299,6 +302,7 @@
 				423CE007248F26D600428791 /* LaunchScreen.storyboard in Resources */,
 				AF178FC5248F9288005E14B6 /* GoogleService-Info.plist in Resources */,
 				423CE004248F26D600428791 /* Assets.xcassets in Resources */,
+				AF5C363F249CF38000F7A237 /* Default-568h@2x.png in Resources */,
 				423CE002248F26D100428791 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

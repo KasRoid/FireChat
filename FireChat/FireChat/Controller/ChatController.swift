@@ -56,6 +56,7 @@ class ChatController: UICollectionViewController {
         showLoader(true)
         Service.fetchMessage(forUser: user) { messages in
             self.showLoader(false)
+            guard messages.count > 0 else { return }
             self.messages = messages
             self.collectionView.reloadData()
             self.collectionView.scrollToItem(at: [0, self.messages.count - 1], at: .bottom, animated: true)

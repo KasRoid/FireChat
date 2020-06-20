@@ -68,13 +68,13 @@ class NewMessageController: UITableViewController {
     }
     
     func configureSearchController() {
-        searchController.searchResultsUpdater = self // ?
-        searchController.searchBar.showsCancelButton = false // ?
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.showsCancelButton = false
         navigationItem.searchController = searchController
-        searchController.obscuresBackgroundDuringPresentation = false // ?
-        searchController.hidesNavigationBarDuringPresentation = false // ?
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchBar.placeholder = "Search for a user"
-        definesPresentationContext = false // ?
+        definesPresentationContext = false
         
         if let textField = searchController.searchBar.value(forKey: "searchField") as? UITextField {
             textField.textColor = .systemPurple

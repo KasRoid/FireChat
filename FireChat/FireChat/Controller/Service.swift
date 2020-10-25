@@ -68,7 +68,6 @@ struct Service {
             if snapshot?.documentChanges.count == 0 { completion(messages) }
             else {
                 snapshot?.documentChanges.forEach({ change in // 변화가 있으면 데이터 가져옴
-                    print("cccc")
                     if change.type == .added {
                         let dictionary = change.document.data()
                         messages.append(Message(dictionary: dictionary))

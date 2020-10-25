@@ -34,8 +34,6 @@
 		</dict>
 		<key>FirebaseAuthInterop.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
@@ -55,10 +53,8 @@
 		</dict>
 		<key>FirebaseCoreDiagnosticsInterop.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>9</integer>
 		</dict>
 		<key>FirebaseFirestore.xcscheme</key>
 		<dict>

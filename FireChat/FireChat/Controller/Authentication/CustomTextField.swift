@@ -19,6 +19,7 @@ class CustomTextField: UITextField {
         keyboardAppearance = .dark
         attributedPlaceholder = NSAttributedString(string: placeholder,
                                                    attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+      
     }
     
     required init?(coder: NSCoder) {
